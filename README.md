@@ -11,7 +11,9 @@ in addition to several other languages.
 # Installation
 
 Assuming interpreters are install the examples should be runnable from
-directly inside the direg
+directly inside the directory.  A Docker container deployable to any
+standard VPS should be available with the major version of the core
+interpreters. 
 
 # Review 
 
