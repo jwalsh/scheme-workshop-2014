@@ -1,0 +1,6 @@
+(use-modules (ice-9 regex))
+(use-modules (ice-9 rdelim))
+(define text (string-downcase (read-line)))
+(define text (regexp-substitute/global #f "[a-z]+"  text 'pre (lambda (m) (string-titlecase (match:substring m))) 'post))
+(define text (regexp-substitute/global #f "[^a-zA-Z]+"  text 'pre 'post))
+(display text)
