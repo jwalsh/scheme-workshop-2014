@@ -15,7 +15,7 @@ directly inside the directory.  A Docker container deployable to any
 standard VPS should be available with the major version of the core
 interpreters. 
 
-# Review 
+# Scheme Review 
 
 ## R1RS
 
@@ -162,3 +162,20 @@ http://docs.racket-lang.org/guide/standards.html#%28part._r5rs%29
 7.3 Derived expression types . . . . . . . . . . . . . . . . . 68
 A Standard Libraries . . . . . . . . . . . . . . . . . . . . . . . 73
 ```
+
+## Languages Review 
+
+The languages recommended in Seven Lessons from Seven More Languages in
+Seven Weeks provide a reasonable set of contrasting features for the
+R7RS specification and will just be used for structure based on the
+starting guides.  From the Pragmatic Programmers' mailer for the book:
+
+
+> To learn functional programming, learn functional composition first. Programmers who want to improve themselves are learning functional programming in increasing numbers. Factor is a great language for learning about the composition of functions. The concatenative language forces new users to think through how functions will work together.
+> If you want to learn JavaScript, learn how prototypes work first in a simpler language.
+> New JavaScript programmers are often better off learning a language like Lua first, which has the same overall model but fewer distracting concepts than JavaScript.
+> You don't need callbacks to build a beautiful user interface. Reactive programming is a new style of user interface development that helps build highly interactive and reliable applications. The Elm programming language is a language with reactive concepts baked in, from the inside out, and it compiles to JavaScript.
+> To build better cloud applications, your applications need to know how to fail. Applications are becoming more distributed than ever before. Elixir is among the most promising young languages for building cloud applications that scale well and handle failure in a sensible, reliable way. Elixir combines the natural syntax of Ruby with Clojure-style macros, all on the Erlang virtual machine for distribution and failover.
+> Technical computing will hit the limitations of multicore architectures before most other programming branches will. Scientific computing is increasingly hitting a wall because existing languages don't take full advantage of multicore architecture. The Julia language is growing quickly, allowing familiar programming approaches but enabling much more scalable and powerful mathematical models without dropping into C++.
+> Use logic programming when you need to build applications that "think." You don't need to know Mercury or Prolog to write logic programs. If you find yourself needing to occasionally solve logic problems, use a library instead. MiniKanren is one such library that is available in languages like Haskell and Clojure.
+> You don't need to use Haskell, Agda or Idris to take advantage of advanced type theory in your everyday job. Sometimes, it's hard to see the forest for the trees. Languages like Idris are excellent for reasoning about typing. You can build a type model in Idris and adapt it to a language like C++.
