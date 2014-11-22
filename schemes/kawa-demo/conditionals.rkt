@@ -1,0 +1,11 @@
+(if (> 3 2) 'yes 'no)
+(cond ((> 3 2) 'greater)
+      ((< 3 2) 'less)
+      (else #f))
+(case (* 3 2)
+  ((2 3 5 7) 'prime)
+  ((1 4 6 8 9) 'composite))
+
+(and (> 3 2) (< 2 3))
+(or (= 2 2) (> 2 1))
+(when #t (+ 2 2))

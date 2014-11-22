@@ -1,0 +1,2 @@
+(boolean? #t)
+(not #t)
