@@ -7,28 +7,46 @@
 
 b
 
+;; procedure definition
+(define (sqr x) (* x x))
+
+(sqr 5)
+
 ;; symbol definition
 (define square
   (lambda (x) (* x x)))
 
 (square 5)
 
-;; procedure definition
-(define (sqr x) (* x x))
-
-(sqr 5)
 
 (define (average x y)
   (/ (+ x y) 2))
 (define (mean-square x y)
-  (average (sqr x) (sqr y)))
+  (average (square x) (square y)))
 
 (mean-square 10 100)
 
 (define (abs x)
-  (cond ((< 0 x) (- x))
-        ((= 0 x) 0)
-        ((> 0 x) x)))
+  (cond ((< x 0) (- x))
+        ((= x 0) 0)
+        ((> x 0) x)))
+
+(define (good-enough? guess x)
+  (< (abs (- (square guess) x))
+     .0001))
+
+(define (improve guess x)
+  (average guess (/ x guess)))
+
+(define (try guess x)
+  (if (good-enough? guess x)
+      guess
+      (try (improve guess x) x)))
+
+(define (jw/sqrt x)
+  (try (/ x 2) x))
+
+(exact->inexact (jw/sqrt 2))
 
 
 ;;{{{ Sigma
