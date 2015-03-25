@@ -1,3 +1,36 @@
+;; Black-box abstraction
+
+(define a
+  (* 5 5))
+
+(define b (+ a (* 5 a)))
+
+b
+
+;; symbol definition
+(define square
+  (lambda (x) (* x x)))
+
+(square 5)
+
+;; procedure definition
+(define (sqr x) (* x x))
+
+(sqr 5)
+
+(define (average x y)
+  (/ (+ x y) 2))
+(define (mean-square x y)
+  (average (sqr x) (sqr y)))
+
+(mean-square 10 100)
+
+(define (abs x)
+  (cond ((< 0 x) (- x))
+        ((= 0 x) 0)
+        ((> 0 x) x)))
+
+
 ;;{{{ Sigma
 
 ;; The goal is to support initial sigma notation
